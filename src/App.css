@@ -13,6 +13,38 @@
   }
 }
 
+.table-row-fab {
+  position: relative;
+  display: none;
+  width: 0;
+}
+
+.table-row-fab div {
+  background-color: #000e;
+  position: absolute;
+  display: flex;
+  border-radius: 4px;
+  top: 0;
+  transform: translate(-100%, 8px);
+}
+
+.table-row-fab svg {
+  height: 36px;
+  width: 36px;
+  fill: white;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.table-row-fab svg:hover {
+  fill: gold;
+  transform: scale(1.01);
+}
+
+.table-row:hover .table-row-fab {
+  display: block;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +54,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0 10vw;
 }
 
 .App-link {
